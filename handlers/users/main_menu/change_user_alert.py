@@ -10,7 +10,7 @@ from aiogram import types
 from aiogram.dispatcher.storage import FSMContext
 
 
-@dp.callback_query_handler(lambda c: c.data == CHANGE_USER_ALERT_CALLBACK_DATA, state=MainMenuStatesGroup.main_menu_ikb)
+@dp.callback_query_handler(lambda c: c.data == CHANGE_USER_ALERT_CALLBACK_DATA, state=MainMenuStatesGroup.main_menu)
 async def change_user_alert(callback: types.CallbackQuery, state: FSMContext) -> None:
     user_id = callback.from_user.id
 
