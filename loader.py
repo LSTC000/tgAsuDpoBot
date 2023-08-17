@@ -9,6 +9,8 @@ from data.config import (
     REDIS_DB,
     USERS_ALERT_MAXSIZE,
     USERS_ALERT_TTL,
+    QUESTIONS_MAXSIZE,
+    QUESTIONS_TTL,
 )
 
 from gino import Gino
@@ -24,6 +26,7 @@ __all__ = [
     'dp',
     'db',
     'users_alert_cache',
+    'questions_cache',
     'logger',
 ]
 
@@ -35,5 +38,7 @@ dp = Dispatcher(bot=bot, storage=storage)
 db = Gino()
 
 users_alert_cache = TTLCache(maxsize=USERS_ALERT_MAXSIZE, ttl=USERS_ALERT_TTL)
+questions_cache = TTLCache(maxsize=QUESTIONS_MAXSIZE, ttl=QUESTIONS_TTL)
+
 
 logger = logging.getLogger(__name__)
