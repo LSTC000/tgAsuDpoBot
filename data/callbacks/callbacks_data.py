@@ -7,9 +7,16 @@ START_COMMAND_CALLBACK_DATA = 'start_command'
 MAIN_MENU_CALLBACK_DATA = 'main_manu'
 CHANGE_USER_ALERT_CALLBACK_DATA = 'change_alert'
 # ADMIN MENU.
+ADD_QUESTION_N_ANSWER_CALLBACK_DATA = 'add_question_n_answer'
 ALERT_FOR_USERS_CALLBACK_DATA = 'alert_for_users'
 CONFIRM_ALERT_FOR_USERS_CALLBACK_DATA = 'confirm_alert_for_users'
 CANCEL_ALERT_FOR_USERS_CALLBACK_DATA = 'cancel_alert_for_users'
+# ADD QUESTION AND ANSWER.
+ADD_QUESTION_CALLBACK_DATA = 'add_question'
+ADD_ANSWER_CALLBACK_DATA = 'add_question'
+SAVE_ADD_QUESTION_N_ANSWER_CALLBACK_DATA = 'save_add_question_n_answer'
+CONFIRM_ADD_QUESTION_N_ANSWER_CALLBACK_DATA = 'confirm_add_question_n_answer'
+CANCEL_ADD_QUESTION_N_ANSWER_CALLBACK_DATA = 'cancel_add_question_n_answer'
 # PICKERS.
 IGNORE_CALLBACK_DATA = 'ignore'
 PREV_CALLBACK_DATA = 'prev'

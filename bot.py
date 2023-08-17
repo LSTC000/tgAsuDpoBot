@@ -14,6 +14,7 @@ from handlers import (
     register_admins_commands,
     register_admins_alert_for_users,
     register_admins_cancels,
+    register_admins_add_question_n_answer,
 )
 
 from database import startup_setup, shutdown_setup
@@ -28,6 +29,7 @@ def register_all_handlers(dispatcher: Dispatcher):
     register_users_cancels(dispatcher)
     register_admins_cancels(dispatcher)
     register_users_main_menu(dispatcher)
+    register_admins_add_question_n_answer(dispatcher)
     register_admins_alert_for_users(dispatcher)
     register_users_commands(dispatcher)
     register_admins_commands(dispatcher)
