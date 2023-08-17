@@ -9,7 +9,7 @@ async def delete_question_n_answer_cache(question_id: int) -> None:
     :return: None.
     """
 
-    # Delete question and answer the database.
+    # Delete question and answer from the database.
     await delete_question_n_answer(question_id=question_id)
     # Update questions cache.
     questions_cache['questions'] = {question[0]: question[1] for question in await get_questions()}
