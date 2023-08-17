@@ -3,6 +3,7 @@ __all__ = [
     'get_answer',
     'add_user_alert',
     'add_question_n_answer',
+    'update_question',
     'delete_user_alert',
     'delete_question_n_answer',
     'check_user_alert',
@@ -17,4 +18,5 @@ from .check_user_alert import check_user_alert
 # Questions and answers.
 from .get_answer import get_answer
 from .add_question_n_answer import add_question_n_answer
+from .update_question import update_question
 from .delete_question_n_answer import delete_question_n_answer
