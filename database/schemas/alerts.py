@@ -8,7 +8,7 @@ class Alerts(BaseModel):
 
     # Telegram user id.
     user_id = Column(BigInteger, nullable=False, primary_key=True)
-    # Created review date.
+    # Created alert date.
     created_date = Column(DateTime(True), server_default=func.now())
 
     query: sql.select
