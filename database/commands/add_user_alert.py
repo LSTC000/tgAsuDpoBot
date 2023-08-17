@@ -6,10 +6,10 @@ from database import Alerts
 
 
 async def add_user_alert(user_id: int) -> None:
-    '''
+    """
     :param user_id: Telegram user id.
     :return: None.
-    '''
+    """
 
     try:
         alert = Alerts(user_id=user_id)
