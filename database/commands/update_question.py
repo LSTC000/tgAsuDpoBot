@@ -1,11 +1,11 @@
 from database import QuestionsAndAnswers
 
 
-async def update_question(question: str, new_question: str) -> None:
+async def update_question(question_id: int, new_question: str) -> None:
     """
-    :param question: Old question.
+    :param question_id: Question id.
     :param new_question: New question.
     """
 
     await QuestionsAndAnswers.update.values(question=new_question) \
-        .where(QuestionsAndAnswers.question == question).gino.status()
+        .where(QuestionsAndAnswers.id == question_id).gino.status()
