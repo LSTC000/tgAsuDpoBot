@@ -4,6 +4,7 @@ __all__ = [
     'add_question_n_answer_cache',
     'get_questions_cache',
     'delete_user_alert_cache',
+    'delete_question_n_answer_cache',
 ]
 
 
@@ -14,3 +15,4 @@ from .delete_user_alert_cache import delete_user_alert_cache
 # QUESTIONS AND ANSWERS.
 from .add_question_n_answer_cache import add_question_n_answer_cache
 from .get_questions_cache import get_questions_cache
+from .delete_question_n_answer_cache import delete_question_n_answer_cache
