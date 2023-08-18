@@ -4,7 +4,7 @@ from data.callbacks import CONFIRM_DELETE_QUESTION_N_ANSWER_CALLBACK_DATA, CANCE
 
 from data.messages import SUCCESSFUL_DELETE_QUESTION_N_ANSWER_MESSAGE
 
-from data.redis import QUESTION_REDIS_KEY, QUESTION_ID_REDIS_KEY, ADMIN_MENU_REDIS_KEY, PICKER_PAGE_REDIS_KEY
+from data.redis import QUESTION_ID_REDIS_KEY, ADMIN_MENU_REDIS_KEY, PICKER_PAGE_REDIS_KEY
 
 from functions import clear_last_ikb, call_questions_n_answers_menu_ikb, delete_question_n_answer_cache
 
@@ -26,7 +26,6 @@ async def confirm_delete_question_n_answer_menu(callback: types.CallbackQuery, s
 
     if callback.data == CONFIRM_DELETE_QUESTION_N_ANSWER_CALLBACK_DATA:
         async with state.proxy() as data:
-            data.pop(QUESTION_REDIS_KEY)
             data.pop(PICKER_PAGE_REDIS_KEY)
             data.pop(ADMIN_MENU_REDIS_KEY)
 
