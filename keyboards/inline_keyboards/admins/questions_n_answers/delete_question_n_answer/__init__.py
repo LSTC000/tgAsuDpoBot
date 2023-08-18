@@ -1,0 +1,4 @@
+__all__ = ['confirm_delete_question_n_answer_menu_ikb']
+
+
+from .confirm_delete_question_n_answer_menu_ikb import confirm_delete_question_n_answer_menu_ikb

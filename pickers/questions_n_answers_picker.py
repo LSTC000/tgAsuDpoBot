@@ -2,7 +2,7 @@ from math import ceil
 
 from data.callbacks import (
     CANCEL_TO_MAIN_MENU_CALLBACK_DATA,
-    CANCEL_TO_ADMIN_MENU_CALLBACK_DATA,
+    CANCEL_TO_QUESTIONS_N_ANSWERS_MENU_CALLBACK_DATA,
     IGNORE_CALLBACK_DATA,
     PREV_CALLBACK_DATA,
     NEXT_CALLBACK_DATA
@@ -10,7 +10,7 @@ from data.callbacks import (
 
 from data.config import QUESTIONS_AND_ANSWERS_PICKER_ROW_WIDTH, MAX_QUESTIONS_ON_PAGE
 
-from data.messages import CANCEL_TO_MAIN_MENU_IKB_MESSAGE, CANCEL_TO_ADMIN_MENU_IKB_MESSAGE
+from data.messages import CANCEL_TO_MAIN_MENU_IKB_MESSAGE, CANCEL_TO_QUESTIONS_N_ANSWERS_MENU_IKB_MESSAGE
 
 from data.redis import PICKER_PAGE_REDIS_KEY, ADMIN_MENU_REDIS_KEY
 
@@ -66,11 +66,12 @@ class QuestionsAndAnswersPicker:
 
         if admin_menu:
             ikb.row(InlineKeyboardButton(
-                CANCEL_TO_ADMIN_MENU_IKB_MESSAGE, callback_data=CANCEL_TO_ADMIN_MENU_CALLBACK_DATA)
+                text=CANCEL_TO_QUESTIONS_N_ANSWERS_MENU_IKB_MESSAGE,
+                callback_data=CANCEL_TO_QUESTIONS_N_ANSWERS_MENU_CALLBACK_DATA)
             )
         else:
             ikb.row(InlineKeyboardButton(
-                CANCEL_TO_MAIN_MENU_IKB_MESSAGE, callback_data=CANCEL_TO_MAIN_MENU_CALLBACK_DATA)
+                text=CANCEL_TO_MAIN_MENU_IKB_MESSAGE, callback_data=CANCEL_TO_MAIN_MENU_CALLBACK_DATA)
             )
 
         return ikb

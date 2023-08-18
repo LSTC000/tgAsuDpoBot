@@ -13,7 +13,7 @@ from aiogram.dispatcher.storage import FSMContext
 @dp.callback_query_handler(
     lambda c: c.data == CANCEL_TO_MAIN_MENU_CALLBACK_DATA,
     state=[
-        QuestionsAndAnswersPickerStatesGroup.questions_n_answers_picker,
+        QuestionsAndAnswersPickerStatesGroup.process_questions_n_answers_picker,
         QuestionsAndAnswersPickerStatesGroup.question_n_answer_report,
         AdminMenuStatesGroup.admin_menu
     ]

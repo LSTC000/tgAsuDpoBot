@@ -21,4 +21,8 @@ CONFIRM_ADD_QUESTION_N_ANSWER_MESSAGE = '''
 
 {}
 '''
-SUCCESSFUL_ADD_QUESTION_N_ANSWER_MESSAGE = '✅ Вопрос-ответ успешно добавлен.'
+SUCCESSFUL_ADD_QUESTION_N_ANSWER_MESSAGE = '✅ Вопрос и ответ успешно добавлены.'
+# DELETE QUESTION AND ANSWER.
+DELETE_QUESTION_N_ANSWER_MESSAGE = '🤖 Выберите вопрос, который хотите удалить'
+SUCCESSFUL_DELETE_QUESTION_N_ANSWER_MESSAGE = '✅ Вопрос и ответ успешно удалены.'
+CONFIRM_DELETE_QUESTION_N_ANSWER_MESSAGE = '❓ Вы действительно хотите удалить данный вопрос: {}'
