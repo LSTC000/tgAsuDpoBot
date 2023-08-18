@@ -11,6 +11,8 @@ ADD_QUESTION_N_ANSWER_IKB_MESSAGE = '🟢 Добавить вопрос-отве
 ALERT_FOR_USERS_IKB_MESSAGE = '🗞️ Отправить объявление'
 CONFIRM_ALERT_FOR_USERS_IKB_MESSAGE = '✅ Да'
 CANCEL_ALERT_FOR_USERS_IKB_MESSAGE = '❌ Нет'
+# QUESTIONS AND ANSWERS.
+QUESTIONS_N_ANSWERS_IKB_MESSAGE = '❓❗ Вопросы и ответы'
 # ADD QUESTION AND ANSWER.
 ADD_QUESTION_IKB_MESSAGE = '✏️ Введите вопрос'
 ADD_ANSWER_IKB_MESSAGE = '✏️ Введите ответ'

@@ -22,9 +22,9 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 class QuestionsAndAnswersPicker:
-    async def start_picker(self, page: int, admin_menu: bool = False) -> InlineKeyboardMarkup:
+    async def start_picker(self, page: int = 0, admin_menu: bool = False) -> InlineKeyboardMarkup:
         """
-        :param page: Current picker page. Start value: 0.
+        :param page: Current picker page. Default: 0.
         :param admin_menu: True if the user is in the admin menu. Default: False.
         :return: Inline keyboard for pick a question and answer.
         """
@@ -37,11 +37,11 @@ class QuestionsAndAnswersPicker:
         start = page * MAX_QUESTIONS_ON_PAGE
         stop = start + MAX_QUESTIONS_ON_PAGE if start + MAX_QUESTIONS_ON_PAGE <= questions_count else questions_count
 
-        for key in list(questions.keys())[start:stop]:
+        for question_id in list(questions.keys())[start:stop]:
             ikb.row(
                 InlineKeyboardButton(
-                    text=questions[key],
-                    callback_data=key
+                    text=questions[question_id],
+                    callback_data=question_id
                 )
             )
 

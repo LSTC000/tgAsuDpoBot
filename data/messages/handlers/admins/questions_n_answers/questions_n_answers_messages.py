@@ -1,3 +1,6 @@
+# QUESTIONS AND ANSWERS.
+QUESTIONS_N_ANSWERS_MENU_MESSAGE = '🤖 Выберите что хотите изменить'
+# ADD QUESTION AND ANSWER.
 ADD_QUESTION_N_ANSWER_MENU_MESSAGE = '🤖 Введите вопрос и ответ на него, а затем нажмите кнопку - добавить'
 ENTER_QUESTION_MESSAGE = '✏️ Введите вопрос.'
 ENTER_ANSWER_MESSAGE = '✏️ Введите ответ.'

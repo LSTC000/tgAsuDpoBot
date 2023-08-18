@@ -11,6 +11,7 @@ from handlers import (
     register_users_commands,
     register_users_main_menu,
     register_users_cancels,
+    register_users_questions_n_answers,
     register_admins_commands,
     register_admins_alert_for_users,
     register_admins_cancels,
@@ -28,6 +29,7 @@ from aiogram.utils import executor
 def register_all_handlers(dispatcher: Dispatcher):
     register_users_cancels(dispatcher)
     register_admins_cancels(dispatcher)
+    register_users_questions_n_answers(dispatcher)
     register_users_main_menu(dispatcher)
     register_admins_add_question_n_answer(dispatcher)
     register_admins_alert_for_users(dispatcher)
