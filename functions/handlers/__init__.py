@@ -9,6 +9,8 @@ __all__ = [
     'call_add_question_n_answer_menu_ikb',
     'call_confirm_add_question_n_answer_menu_ikb',
     'call_questions_n_answers_menu_ikb',
+    'call_update_question_n_answer_menu_ikb',
+    'call_confirm_update_question_n_answer_menu_ikb',
     'call_confirm_delete_question_n_answer_menu_ikb',
 ]
 
@@ -21,6 +23,8 @@ from .call_confirm_alert_for_users_menu_ikb import call_confirm_alert_for_users_
 from .call_add_question_n_answer_menu_ikb import call_add_question_n_answer_menu_ikb
 from .call_confirm_add_question_n_answer_menu_ikb import call_confirm_add_question_n_answer_menu_ikb
 from .call_questions_n_answers_menu_ikb import call_questions_n_answers_menu_ikb
+from .call_update_question_n_answer_menu_ikb import call_update_question_n_answer_menu_ikb
+from .call_confirm_update_question_n_answer_menu_ikb import call_confirm_update_question_n_answer_menu_ikb
 from .call_confirm_delete_question_n_answer_menu_ikb import call_confirm_delete_question_n_answer_menu_ikb
 # CLEARS.
 from .clear_last_ikb import clear_last_ikb

@@ -13,6 +13,17 @@ from .add_question_n_answer import (
     save_add_question_n_answer,
     confirm_add_question_n_answer_menu
 )
+# UPDATE QUESTION AND ANSWER.
+from .update_question_n_answer import (
+    update_question_n_answer_picker,
+    process_update_question_n_answer_picker,
+    update_question,
+    update_answer,
+    enter_new_question,
+    enter_new_answer,
+    save_update_question_n_answer,
+    confirm_update_question_n_answer_menu
+)
 # DELETE QUESTION AND ANSWER.
 from .delete_question_n_answer import (
     delete_question_n_answer_picker,
@@ -32,6 +43,16 @@ def register_admins_questions_n_answers(dp: Dispatcher):
     dp.register_message_handler(enter_answer)
     dp.register_callback_query_handler(save_add_question_n_answer)
     dp.register_callback_query_handler(confirm_add_question_n_answer_menu)
+
     dp.register_callback_query_handler(delete_question_n_answer_picker)
     dp.register_callback_query_handler(process_delete_question_n_answer_picker)
     dp.register_callback_query_handler(confirm_delete_question_n_answer_menu)
+
+    dp.register_callback_query_handler(update_question_n_answer_picker)
+    dp.register_callback_query_handler(process_update_question_n_answer_picker)
+    dp.register_callback_query_handler(update_question)
+    dp.register_callback_query_handler(update_answer)
+    dp.register_message_handler(enter_new_question)
+    dp.register_message_handler(enter_new_answer)
+    dp.register_callback_query_handler(save_update_question_n_answer)
+    dp.register_callback_query_handler(confirm_update_question_n_answer_menu)

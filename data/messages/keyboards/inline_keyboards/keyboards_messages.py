@@ -14,6 +14,7 @@ CONFIRM_ALERT_FOR_USERS_IKB_MESSAGE = '✅ Да'
 CANCEL_ALERT_FOR_USERS_IKB_MESSAGE = '❌ Нет'
 # QUESTIONS AND ANSWERS.
 ADD_QUESTION_N_ANSWER_IKB_MESSAGE = '🟢 Добавить вопрос и ответ'
+UPDATE_QUESTION_N_ANSWER_IKB_MESSAGE = '🟠 Обновить данные'
 DELETE_QUESTION_N_ANSWER_IKB_MESSAGE = '🔴 Удалить вопрос и ответ'
 # ADD QUESTION AND ANSWER.
 ADD_QUESTION_IKB_MESSAGE = '✏️ Введите вопрос'
@@ -21,6 +22,12 @@ ADD_ANSWER_IKB_MESSAGE = '✏️ Введите ответ'
 SAVE_ADD_QUESTION_N_ANSWER_IKB_MESSAGE = '✅ Добавить'
 CONFIRM_ADD_QUESTION_N_ANSWER_IKB_MESSAGE = '✅ Да'
 CANCEL_ADD_QUESTION_N_ANSWER_IKB_MESSAGE = '❌ Нет'
+# UPDATE QUESTION AND ANSWER.
+UPDATE_QUESTION_IKB_MESSAGE = '✏️ Изменить вопрос'
+UPDATE_ANSWER_IKB_MESSAGE = '✏️ Изменить ответ'
+SAVE_UPDATE_QUESTION_N_ANSWER_IKB_MESSAGE = '✅ Обновить'
+CONFIRM_UPDATE_QUESTION_N_ANSWER_IKB_MESSAGE = '✅ Да'
+CANCEL_UPDATE_QUESTION_N_ANSWER_IKB_MESSAGE = '❌ Нет'
 # DELETE QUESTION AND ANSWER.
 CONFIRM_DELETE_QUESTION_N_ANSWER_IKB_MESSAGE = '✅ Да'
 CANCEL_DELETE_QUESTION_N_ANSWER_IKB_MESSAGE = '❌ Нет'

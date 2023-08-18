@@ -7,6 +7,7 @@ from functions import clear_last_ikb, clear_redis_data, call_questions_n_answers
 from states import (
     QuestionsAndAnswersMenuStatesGroup,
     AddQuestionAndAnswerStatesGroup,
+    UpdateQuestionAndAnswerStatesGroup,
     DeleteQuestionAndAnswerStatesGroup,
 )
 
@@ -18,6 +19,8 @@ from aiogram.dispatcher.storage import FSMContext
     lambda c: c.data == CANCEL_TO_QUESTIONS_N_ANSWERS_MENU_CALLBACK_DATA,
     state=[
         AddQuestionAndAnswerStatesGroup.add_question_n_answer_menu,
+        UpdateQuestionAndAnswerStatesGroup.process_update_question_n_answer_picker,
+        UpdateQuestionAndAnswerStatesGroup.update_question_n_answer_menu,
         DeleteQuestionAndAnswerStatesGroup.process_delete_question_n_answer_picker,
     ]
 )

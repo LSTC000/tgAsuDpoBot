@@ -9,7 +9,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 def confirm_add_question_n_answer_menu_ikb() -> InlineKeyboardMarkup:
     """
-    :return: Confirm question and answer menu inline keyboard.
+    :return: Confirm add question and answer menu inline keyboard.
     """
 
     ikb = InlineKeyboardMarkup(row_width=ROW_WIDTH)
