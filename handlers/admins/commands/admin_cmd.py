@@ -11,7 +11,7 @@ from aiogram.dispatcher.storage import FSMContext
 
 
 @dp.message_handler(commands=['admin'], state='*')
-async def admin_command(message: types.Message, state: FSMContext) -> None:
+async def admin_cmd(message: types.Message, state: FSMContext) -> None:
     user_id = message.from_user.id
 
     if user_id in ADMINS:

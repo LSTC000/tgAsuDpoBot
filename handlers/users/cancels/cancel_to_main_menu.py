@@ -24,6 +24,6 @@ async def cancel_to_main_menu(callback: types.CallbackQuery, state: FSMContext) 
     # Clear last inline keyboard.
     await clear_last_ikb(user_id=user_id, state=state)
     # Call main inline menu.
-    await call_main_menu_ikb(user_id=user_id, alert=await check_user_alert_cache(user_id), state=state)
+    await call_main_menu_ikb(user_id=user_id, state=state)
     # Set main_menu_ikb state.
     await MainMenuStatesGroup.main_menu.set()

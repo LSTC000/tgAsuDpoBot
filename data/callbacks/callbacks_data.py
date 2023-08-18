@@ -13,7 +13,7 @@ CONFIRM_ALERT_FOR_USERS_CALLBACK_DATA = 'confirm_alert_for_users'
 CANCEL_ALERT_FOR_USERS_CALLBACK_DATA = 'cancel_alert_for_users'
 # ADD QUESTION AND ANSWER.
 ADD_QUESTION_CALLBACK_DATA = 'add_question'
-ADD_ANSWER_CALLBACK_DATA = 'add_question'
+ADD_ANSWER_CALLBACK_DATA = 'add_answer'
 SAVE_ADD_QUESTION_N_ANSWER_CALLBACK_DATA = 'save_add_question_n_answer'
 CONFIRM_ADD_QUESTION_N_ANSWER_CALLBACK_DATA = 'confirm_add_question_n_answer'
 CANCEL_ADD_QUESTION_N_ANSWER_CALLBACK_DATA = 'cancel_add_question_n_answer'
