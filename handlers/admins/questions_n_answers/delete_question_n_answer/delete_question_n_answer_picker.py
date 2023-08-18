@@ -41,4 +41,3 @@ async def delete_question_n_answer_picker(callback: types.CallbackQuery, state: 
 
     # Set process_delete_question_n_answer_picker state.
     await DeleteQuestionAndAnswerStatesGroup.process_delete_question_n_answer_picker.set()
-
