@@ -1,6 +1,6 @@
 from loader import dp, bot
 
-from data.messages import ERROR_ALERT_FOR_USERS_MESSAGE
+from data.messages import ERROR_ENTER_ALERT_FOR_USERS_MESSAGE
 
 from data.redis import ALERT_FOR_USERS_REDIS_KEY
 
@@ -30,7 +30,7 @@ async def enter_alert_for_users(message: types.Message, state: FSMContext) -> No
         # Set confirm_alert_for_users state.
         await AdminMenuStatesGroup.confirm_alert_for_users.set()
     else:
-        await bot.send_message(chat_id=user_id, text=ERROR_ALERT_FOR_USERS_MESSAGE)
+        await bot.send_message(chat_id=user_id, text=ERROR_ENTER_ALERT_FOR_USERS_MESSAGE)
         # Call admin menu.
         await call_admin_menu_ikb(user_id=user_id, state=state)
         # Set admin_menu state.
