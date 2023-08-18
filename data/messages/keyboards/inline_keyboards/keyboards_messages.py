@@ -7,7 +7,7 @@ START_COMMAND_IKB_MESSAGE = 'Давай начнём 🚀'
 USER_ALERT_ON_IKB_MESSAGE = '🔔 Включить уведомления'
 USER_ALERT_OFF_IKB_MESSAGE = '🔕 Отключить уведомления'
 # ADMIN MENU.
-ADD_QUESTION_N_ANSWER_IKB_MESSAGE = '🟢 Добавить вопрос-ответ'
+ADD_QUESTION_N_ANSWER_IKB_MESSAGE = '🟢 Добавить вопрос и ответ'
 ALERT_FOR_USERS_IKB_MESSAGE = '🗞️ Отправить объявление'
 CONFIRM_ALERT_FOR_USERS_IKB_MESSAGE = '✅ Да'
 CANCEL_ALERT_FOR_USERS_IKB_MESSAGE = '❌ Нет'

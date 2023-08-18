@@ -4,7 +4,7 @@ from data.callbacks import ADD_QUESTION_N_ANSWER_CALLBACK_DATA
 
 from functions import clear_last_ikb, call_add_question_n_answer_menu_ikb
 
-from states import AdminMenuStatesGroup, AddQuestionAndAnswerStatesGroup
+from states import QuestionsAndAnswersMenuStatesGroup, AddQuestionAndAnswerStatesGroup
 
 from aiogram import types
 from aiogram.dispatcher.storage import FSMContext
@@ -12,7 +12,7 @@ from aiogram.dispatcher.storage import FSMContext
 
 @dp.callback_query_handler(
     lambda c: c.data == ADD_QUESTION_N_ANSWER_CALLBACK_DATA,
-    state=AdminMenuStatesGroup.admin_menu
+    state=QuestionsAndAnswersMenuStatesGroup.questions_n_answers_menu
 )
 async def add_question_n_answer_menu(callback: types.CallbackQuery, state: FSMContext) -> None:
     user_id = callback.from_user.id
