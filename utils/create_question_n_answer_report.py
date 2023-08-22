@@ -5,4 +5,4 @@ def create_question_n_answer_report(question: str, answer: str) -> str:
     :return: Question and answer report.
     """
 
-    return f'<b>Вопрос:</b> {question}\n\n<b>Ответ:</b> {answer}'
+    return f'❓ {question}\n\n❗ {answer}'
