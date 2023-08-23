@@ -2,6 +2,7 @@
 CANCEL_TO_MAIN_MENU_IKB_MESSAGE = '⬅️ Вернуться в главное меню'
 CANCEL_TO_ADMIN_MENU_IKB_MESSAGE = '⬅️ Вернуться в меню админимстратора'
 CANCEL_TO_QUESTIONS_N_ANSWERS_MENU_IKB_MESSAGE = '⬅️ Вернуться в меню вопросов и ответов'
+CANCEL_TO_QUESTIONS_N_ANSWERS_IKB_MESSAGE = '⬅️ Вернуться назад'
 # USERS COMMANDS.
 START_COMMAND_IKB_MESSAGE = 'Давай начнём 🚀'
 # MAIN MENU.
