@@ -1,6 +1,5 @@
 .idea
 venv
-models.dist
 .env.dist
 README.md
 .gitignore
